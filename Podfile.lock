@@ -1,0 +1,17 @@
+PODS:
+  - JTCalendar (2.1.9)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+
+DEPENDENCIES:
+  - JTCalendar (~> 2.0)
+  - Realm
+
+SPEC CHECKSUMS:
+  JTCalendar: beb2f4c1b639bf6880f680b4858227acf83a049c
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+
+PODFILE CHECKSUM: 8ea1a986be098992a83d95dcdc01a2fa8be3e341
+
+COCOAPODS: 1.0.1

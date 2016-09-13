@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TableViewController.h"
+#import "TipDataModel.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Enter Tip";
+   
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)SaveButton:(id)sender {
+    float i,j;
+    
+    i =  [self.dollertf.text integerValue];
+    j = [self.centtf.text integerValue];
+    float num;
+    
+    num = (i+(j/100));
+ /*   NSArray *viewControllers = self.navigationController.viewControllers;
+    for (UIViewController *anVC in viewControllers)
+    {
+        if ([anVC isKindOfClass:[TableViewController class]])
+        {
+            [((TableViewController *)anVC).tipArray addObject:[NSNumber numberWithFloat:num]];
+            DBManager *manager = [[DBManager alloc]init];
+            
+            [self.navigationController popToViewController:anVC animated:YES];
+            break;
+        }
+    }*/
+    
+    TipDataModel *newTipObj = [[TipDataModel alloc]init];
+    newTipObj.amount = num;
+    newTipObj.date = [NSDate date];
+    [newTipObj addTip:newTipObj];
+    
+    NSArray *viewControllers = self.navigationController.viewControllers;
+    for (UIViewController *anVC in viewControllers)
+    {
+        if ([anVC isKindOfClass:[TableViewController class]])
+        {
+            [((TableViewController *)anVC).tipArray addObject:[NSNumber numberWithFloat:num]];
+//DBManager *manager = [[DBManager alloc]init];
+            
+            [self.navigationController popToViewController:anVC animated:YES];
+            break;
+        }
+    }
+}
 @end

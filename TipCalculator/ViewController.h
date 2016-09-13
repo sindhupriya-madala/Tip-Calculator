@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *dollertf;
+@property (strong, nonatomic) IBOutlet UITextField *centtf;
+
+- (IBAction)SaveButton:(id)sender;
 
 @end
 

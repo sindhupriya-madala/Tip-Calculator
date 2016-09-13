@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" id="XGg-rc-t9m" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XGg-rc-t9m" id="UHP-yu-Hvv">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa2-bY-v7G">
+                        <rect key="frame" x="54" y="9" width="71" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="yGa-67-4N9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbk-Z6-vXJ">
+                        <rect key="frame" x="141" y="11" width="166" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oix-Xi-zsK">
+                        <rect key="frame" x="8" y="9" width="25" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oix-Xi-zsK" firstAttribute="baseline" secondItem="Sa2-bY-v7G" secondAttribute="baseline" id="6UL-BP-LvK"/>
+                    <constraint firstItem="dbk-Z6-vXJ" firstAttribute="leading" secondItem="Sa2-bY-v7G" secondAttribute="trailing" constant="16" id="7uK-8J-X4E"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dbk-Z6-vXJ" secondAttribute="trailing" constant="5" id="99p-Ze-NrQ"/>
+                    <constraint firstItem="Sa2-bY-v7G" firstAttribute="leading" secondItem="oix-Xi-zsK" secondAttribute="trailing" constant="21" id="J3m-ik-jYk"/>
+                    <constraint firstItem="dbk-Z6-vXJ" firstAttribute="centerY" secondItem="Sa2-bY-v7G" secondAttribute="centerY" id="QCf-20-qIQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Sa2-bY-v7G" secondAttribute="bottom" constant="2" id="UlL-rS-ijP"/>
+                    <constraint firstItem="Sa2-bY-v7G" firstAttribute="top" secondItem="UHP-yu-Hvv" secondAttribute="topMargin" constant="1" id="XWc-0f-YOu"/>
+                    <constraint firstItem="oix-Xi-zsK" firstAttribute="leading" secondItem="UHP-yu-Hvv" secondAttribute="leadingMargin" id="bQE-kE-IhV"/>
+                    <constraint firstItem="oix-Xi-zsK" firstAttribute="centerY" secondItem="UHP-yu-Hvv" secondAttribute="centerY" id="bfo-ia-IaN"/>
+                    <constraint firstItem="Sa2-bY-v7G" firstAttribute="leading" secondItem="UHP-yu-Hvv" secondAttribute="leading" constant="54" id="eIY-9k-cku"/>
+                    <constraint firstItem="oix-Xi-zsK" firstAttribute="firstBaseline" secondItem="Sa2-bY-v7G" secondAttribute="firstBaseline" id="hEa-8g-Rv4"/>
+                    <constraint firstItem="dbk-Z6-vXJ" firstAttribute="leading" secondItem="Sa2-bY-v7G" secondAttribute="trailing" constant="30" id="tAM-0g-RD4"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="UlL-rS-ijP"/>
+                        <exclude reference="tAM-0g-RD4"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="dbk-Z6-vXJ" id="hUh-RB-fdf"/>
+                <outlet property="idLabel" destination="oix-Xi-zsK" id="sCV-Ft-ZjT"/>
+                <outlet property="tipLabel" destination="Sa2-bY-v7G" id="MNO-B1-uGH"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="204"/>
+        </tableViewCell>
+    </objects>
+</document>
