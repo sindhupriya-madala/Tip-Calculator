@@ -4,12 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JTCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OMGHTTPURLRQ.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TipCalculator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PromiseKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,12 +37,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D8B35933C2BC8FAB26006A9CA425B17</key>
+		<key>0683C0411D2583ACF2C223F7CC698E38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79E5A67C4F2A4E277E6FFF991AD9AF6F</key>
+		<key>187AE90F5EFE2FF9C8AFB0C6E4FBE7DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18DDE2707CA213F238A1FAAB2F335E07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8AF140AB49248549C462BA006CDE9F8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>

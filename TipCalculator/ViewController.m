@@ -53,7 +53,7 @@
     newTipObj.date = [NSDate date];
     [newTipObj addTip:newTipObj];
     
-    NSArray *viewControllers = self.navigationController.viewControllers;
+   /* NSArray *viewControllers = self.navigationController.viewControllers;
     for (UIViewController *anVC in viewControllers)
     {
         if ([anVC isKindOfClass:[TableViewController class]])
@@ -64,6 +64,7 @@
             [self.navigationController popToViewController:anVC animated:YES];
             break;
         }
-    }
+    }*/
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 @end

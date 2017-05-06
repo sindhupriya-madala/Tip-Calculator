@@ -24,6 +24,14 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSDateFormatter *titleFormater = [[NSDateFormatter alloc] init];
+    [titleFormater setDateFormat:@"dd-MM-yyyy"];
+    //NSDate *curDate = [NSDate date];
+    NSString *titleStr = [titleFormater stringFromDate:_selectedDate];
+    
+
+    self.navigationController.visibleViewController.title = titleStr;
+
     
     if(self.tipArray == nil)
     {
@@ -38,7 +46,7 @@
 }
 - (nullable NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
     NSString* str = @"footer";
-    self.tipArray = [[[TipDataModel alloc] init]loadTipByDate:[NSDate date]];
+    self.tipArray = [[[TipDataModel alloc] init]loadTipByDate:_selectedDate];
     float tipAmount=0;
     for (int i = [self.tipArray  count]; i>0; i--) {
         tipAmount  += ((TipDataModel*) [self.tipArray objectAtIndex:i-1]).amount;

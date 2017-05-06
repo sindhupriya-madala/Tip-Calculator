@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		49293ADDA309749D6A5E87AE /* libPods-TipCalculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190DFD3A2E418796BE4E1E53 /* libPods-TipCalculator.a */; };
+		5E068CAC1D89F484002DBD35 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CAB1D89F484002DBD35 /* LoginViewController.m */; };
+		5E068CB01D8A0629002DBD35 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CAF1D8A0629002DBD35 /* SignUpViewController.m */; };
+		5E068CB41D8A0658002DBD35 /* VerificationCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CB31D8A0658002DBD35 /* VerificationCodeViewController.m */; };
+		5E5FC3961D8D131D00AC7925 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FC3951D8D131D00AC7925 /* Service.m */; };
+		5E5FC3991D8D135C00AC7925 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FC3981D8D135C00AC7925 /* UserModel.m */; };
 		5EA6A2401D748E6D00CF388D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA6A23F1D748E6D00CF388D /* main.m */; };
 		5EA6A2431D748E6D00CF388D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA6A2421D748E6D00CF388D /* AppDelegate.m */; };
 		5EA6A2461D748E6D00CF388D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA6A2451D748E6D00CF388D /* ViewController.m */; };
@@ -43,6 +48,16 @@
 
 /* Begin PBXFileReference section */
 		190DFD3A2E418796BE4E1E53 /* libPods-TipCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TipCalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E068CAA1D89F484002DBD35 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		5E068CAB1D89F484002DBD35 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		5E068CAE1D8A0629002DBD35 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		5E068CAF1D8A0629002DBD35 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		5E068CB21D8A0658002DBD35 /* VerificationCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationCodeViewController.h; sourceTree = "<group>"; };
+		5E068CB31D8A0658002DBD35 /* VerificationCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationCodeViewController.m; sourceTree = "<group>"; };
+		5E5FC3941D8D131D00AC7925 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		5E5FC3951D8D131D00AC7925 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		5E5FC3971D8D135C00AC7925 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		5E5FC3981D8D135C00AC7925 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		5EA6A23B1D748E6D00CF388D /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA6A23F1D748E6D00CF388D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5EA6A2411D748E6D00CF388D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,9 +111,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5E068CAD1D89F493002DBD35 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E068CAA1D89F484002DBD35 /* LoginViewController.h */,
+				5E068CAB1D89F484002DBD35 /* LoginViewController.m */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		5E068CB11D8A0630002DBD35 /* SignUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E068CAE1D8A0629002DBD35 /* SignUpViewController.h */,
+				5E068CAF1D8A0629002DBD35 /* SignUpViewController.m */,
+			);
+			name = SignUpViewController;
+			sourceTree = "<group>";
+		};
+		5E068CB51D8A0665002DBD35 /* VerificationCodeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E068CB21D8A0658002DBD35 /* VerificationCodeViewController.h */,
+				5E068CB31D8A0658002DBD35 /* VerificationCodeViewController.m */,
+			);
+			name = VerificationCodeViewController;
+			sourceTree = "<group>";
+		};
 		5EA6A2321D748E6D00CF388D = {
 			isa = PBXGroup;
 			children = (
+				5E5FC3971D8D135C00AC7925 /* UserModel.h */,
+				5E5FC3981D8D135C00AC7925 /* UserModel.m */,
+				5E5FC3941D8D131D00AC7925 /* Service.h */,
+				5E5FC3951D8D131D00AC7925 /* Service.m */,
 				5ECB0C871D80EF7D00CBC1D5 /* Realm.framework */,
 				5EA6A2671D768DD200CF388D /* libsqlite3.0.tbd */,
 				5EA6A23D1D748E6D00CF388D /* TipCalculator */,
@@ -129,6 +175,9 @@
 				5EF5A71C1D81FC80000D5209 /* TipDataModel */,
 				5EF5A7211D81FD84000D5209 /* CalanderViewController */,
 				5EF5A7251D82327B000D5209 /* DisplayTableViewController */,
+				5E068CAD1D89F493002DBD35 /* LoginViewController */,
+				5E068CB11D8A0630002DBD35 /* SignUpViewController */,
+				5E068CB51D8A0665002DBD35 /* VerificationCodeViewController */,
 				5EA6A24D1D748E6D00CF388D /* Assets.xcassets */,
 				5EA6A24F1D748E6D00CF388D /* LaunchScreen.storyboard */,
 				5EA6A2521D748E6D00CF388D /* Info.plist */,
@@ -347,14 +396,19 @@
 			files = (
 				5EBDB5061D81307700525075 /* CalenderViewController.m in Sources */,
 				5EA6A2461D748E6D00CF388D /* ViewController.m in Sources */,
+				5E068CB01D8A0629002DBD35 /* SignUpViewController.m in Sources */,
 				5EA6A2651D74CC1300CF388D /* TableViewCell.m in Sources */,
 				5EF5A71B1D81DD1A000D5209 /* TabViewController.m in Sources */,
+				5E5FC3961D8D131D00AC7925 /* Service.m in Sources */,
 				5EA6A24C1D748E6D00CF388D /* TipCalculator.xcdatamodeld in Sources */,
 				5EA6A26B1D76911500CF388D /* TipDataModel.m in Sources */,
 				5EA6A2431D748E6D00CF388D /* AppDelegate.m in Sources */,
 				5EA6A25D1D74A29000CF388D /* TableViewController.m in Sources */,
 				5EF5A7241D82326B000D5209 /* DisplayTableViewController.m in Sources */,
+				5E5FC3991D8D135C00AC7925 /* UserModel.m in Sources */,
+				5E068CAC1D89F484002DBD35 /* LoginViewController.m in Sources */,
 				5EA6A2401D748E6D00CF388D /* main.m in Sources */,
+				5E068CB41D8A0658002DBD35 /* VerificationCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

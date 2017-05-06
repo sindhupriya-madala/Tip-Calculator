@@ -11,9 +11,12 @@
 
 @interface TipDataModel : RLMObject
 
+//@property(nonatomic, assign) NSInteger* id;
 @property(nonatomic)  float amount;
 @property(strong,nonatomic) NSDate* date;
 
 -(void)addTip:(TipDataModel *)tip;
 -(NSMutableArray *)loadTipByDate:(NSDate *)date;
+-(void)deleteTip:(TipDataModel *)deltip;
+-(void)editTip:(TipDataModel *)editTip edited:(float) tip;
 @end

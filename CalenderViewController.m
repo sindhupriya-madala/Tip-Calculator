@@ -96,6 +96,9 @@
 - (void)calendar:(JTCalendarManager *)calendar didTouchDayView:(JTCalendarDayView *)dayView
 {
     _dateSelected = dayView.date;
+    NSLog(@"day view is :%@",dayView.date);
+    NSLog(@"DAy Selected : %@",_dateSelected);
+    
     NSDate *curDate = [NSDate date];    // Animation for the circleView
     dayView.circleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.1, 0.1);
     [UIView transitionWithView:dayView
@@ -107,19 +110,31 @@
                     } completion:nil];
     
     
+    
     // Don't change page in week mode because block the selection of days in first and last weeks of the month
     if(_calendarManager.settings.weekModeEnabled){
         return;
     }
-    if(_dateSelected > curDate)
-    {
-        return;
-    }
-    else if(_dateSelected <= curDate){
+    NSDateComponents *component1 = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:_dateSelected];
+    
+    int selyear = [component1 year];
+    int selmonth = [component1 month];
+    int selday = [component1 day];
+    NSDateComponents *component2 = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:curDate];
+    
+    int year = [component2 year];
+    int month = [component2 month];
+    int day = [component2 day];
+    
+
+
+    if (selyear<=year && selmonth<=month && selday<=day) {    
         DisplayTableViewController *DTVC = [[DisplayTableViewController alloc]init];
         DTVC.selectedDate = _dateSelected;
         [self.navigationController pushViewController:DTVC animated:YES];
-        
+    }
+    else if(selyear>year && selmonth>month && selday>day){
+        return;
         
     }
     // Load the previous or next page if touch a day from another month

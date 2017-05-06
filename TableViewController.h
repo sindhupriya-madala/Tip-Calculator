@@ -12,5 +12,7 @@
 
 @interface TableViewController : UITableViewController
 @property (strong,nonatomic) NSMutableArray *tipArray;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *searchBar;
+- (IBAction)editButton:(UIBarButtonItem*)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *edit;
+
 @end

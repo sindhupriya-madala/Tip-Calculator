@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '79E5A67C4F2A4E277E6FFF991AD9AF6F'
+               BlueprintIdentifier = '0683C0411D2583ACF2C223F7CC698E38'
                BlueprintName = 'Pods-TipCalculator'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-TipCalculator.a'>
